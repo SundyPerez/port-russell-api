@@ -15,17 +15,17 @@ mongoose
   });
 
 // ➤ Import des modèles (utile pour tests si besoin)
-const Catway = require("../../models/Catway");
-const Reservation = require("../../models/Reservation");
-const User = require("../../models/User");
+const Catway = require("./models/Catway");
+const Reservation = require("./models/Reservation");
+const User = require("./models/User");
 
 // ➤ Servir les fichiers statiques du dossier public
 app.use(express.static("public"));
 
 // ➤ Import des routes
-const userRoutes = require("../../routes/users");
-const catwayRoutes = require("../../routes/catways");
-const reservationRoutes = require("../../routes/reservations");
+const userRoutes = require("./routes/users");
+const catwayRoutes = require("./routes/catways");
+const reservationRoutes = require("./routes/reservations");
 
 // ➤ Routes API
 app.use("/api/users", userRoutes);
