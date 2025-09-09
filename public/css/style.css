@@ -1,0 +1,83 @@
+/* style.css */
+
+/* ➤ Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #005f73;
+}
+
+input, button {
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+nav button {
+  margin-right: 10px;
+}
+
+/* ➤ Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  background-color: white;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #94d2bd;
+  color: #003049;
+}
+
+/* ➤ Formulaires */
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #0a9396;
+  outline: none;
+}
+
+/* ➤ Messages */
+.alert {
+  color: red;
+  font-weight: bold;
+}
+
+/* ➤ Conteneur central */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
